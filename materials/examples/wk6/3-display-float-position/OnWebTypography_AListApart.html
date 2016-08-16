@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!-- saved from http://alistapart.com/article/on-web-typography -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>On Web Typography · An A List Apart Article</title>
+
+  <link rel="stylesheet" href="normalize.css">
+  <!-- load our custom styles after normalize so that
+       we can override conflicting styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1 id="logo"><a href="http://alistapart.com/"><img src="../images/ala-logo-big.png" alt="A List Apart"></a></h1>
+
+    <nav>
+      <ul>
+        <li><a href="/">Home</a>
+        </li>
+
+        <li class="active"><a href="/articles">Articles</a>
+        </li>
+        <li><a href="/columns">Columns</a>
+        </li>
+        <li><a href="/blog">Blog</a>
+        </li>
+        <li><a href="/events">Events</a>
+        </li>
+        <li><a href="/topics">Topics</a>
+        </li>
+        <li><a href="/about/contribute">Write for us</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="main">
+    <article>
+
+      <img id="webtype" src="../images/on-web-typography.jpg" alt="On Web Typography">
+      <a href="http://alistapart.com/issue/296">Issue № 296</a>
+
+      <h1 id="page-name">On Web Typography</h1>
+
+      <p>
+        by <a href="http://alistapart.com/author/jsm">Jason Santa Maria</a> November 17, 2009, Published in <a class="tag" href="http://alistapart.com/topic/graphic-design">Graphic Design</a>, <a class="tag" href="http://alistapart.com/topic/typography-web-fonts">Typography &amp; Web Fonts</a>
+      </p>
+
+      <p>
+        There are many books and articles on typography, but considerably few explore typeface selection and pairing. With the floodgates poised to open and the promise of many typefaces being freed up for use on websites, choosing the right face to complement
+        a website’s design will need to become another notch in the designer’s belt. But where do we start?
+      </p>
+      <p>
+        Until now, using any typefaces beyond those installed with computer operating systems by default meant using images, Flash, or some other workaround. But browser makers have put the ball in our court by implementing the <code>@font-face</code>        CSS property, which allows designers to link to any font file and pull it into their pages.
+      </p>
+      <p>
+        This exposed the elephant in the type foundry: Type makers have largely refused to license their raw typefaces on webpages out of concerns about piracy. The <code>@font-face</code> implementation has brought this concern to the forefront, prompting
+        all parties to figure out a mutually copacetic solution. And many solutions are either available or in the works, ranging from augmented font end-user license agreements to hosted third-party font services such as <a href="http://typekit.com/">Typekit</a>,
+        <a href="http://www.typotheque.com/news/typotheque_launches_its_web_fonts_service">Typotheque</a>, and <a href="http://kernest.com/">Kernest</a>. Web designers get more options for type, and foundries and type designers make money off of their
+        creations. Problem solved, right? Sorta.
+      </p>
+
+
+
+      <h2>Brave new world</h2>
+      <p>
+        We’ve been spoiled. Until now, chances are that if you dropped some text onto a webpage in a system font at a reasonable size, it was legible. What’s more, we know the ins and outs of the faces we’ve been forced to use. But many faces to which we’ll soon
+        have access were never meant for screen use, either because they’re aesthetically unsuitable or because they’re just plain illegible.
+      </p>
+      <p>
+        The technical problems with web type also run deep. Inconsistent rendering across browsers and platforms is a substantial hurdle, as are the problems inherent in serving a font file, or more likely a font family: Page sizes can easily jump to 100k and
+        higher. But let’s assume for a moment that these problems will get smoothed out in short order so that we can focus on what to do after that happens.
+      </p>
+      <p>
+        There’s a serious possibility that by gaining access to the world’s font libraries, we’re opening Pandora’s Box. Many people working on the web today have <em>some</em> knowledge of typography, but my hunch is that many designers are about to
+        feel quite baffled by the new challenges they face.
+      </p>
+
+
+
+
+      <h2>Context and meaning</h2>
+      <p>
+        Being a web designer will soon require a deeper understanding of typography and how typefaces work. As we move in this direction, our options may be limited at first, but the pool of choices will steadily grow. And as we know, with great power comes great
+        responsibility. Just because you <em>can</em> use the font that looks like it’s wearing bellbottoms, doesn’t mean you <em>should</em>.
+      </p>
+
+      <p>
+        The system fonts we commonly use such as Georgia, Verdana, and Arial have become so ubiquitous that any associations we might have with them other than “web” are pretty much gone. The aesthetic expression we were unable to achieve due to scant selection
+        afforded us time to hone legibility on a grand scale. This has largely made the web a “set it and forget it” world, in part due to the rapid state of publishing, but also because we don’t have the fine control over typography that we have in print
+        design.
+      </p>
+
+
+
+
+      <h2>Picky, picky</h2>
+      <p>
+        Using a typeface because it looks interesting might yield acceptable results, but really practicing the art of typography involves understanding typefaces and what they mean. Picking a good-enough face isn’t that hard, but choosing an appropriate one
+        that fits comfortably within societal and technical concerns can be tough.
+      </p>
+
+      <p>
+        Notable type designer <a href="http://en.wikipedia.org/wiki/Zuzana_Licko">Zuzana Licko</a> once said “We read best what we read most.” This notion rings true in our learned behavior, but also reveals the reason for the typographer’s toughest challenge:
+        Reading is a personal and relative act. Reading a long passage in a <a href="http://en.wikipedia.org/wiki/Blackletter">blackletter</a> face that was considered “readable” centuries ago would take us considerably more time than if that passage
+        was set in a basic serif face. Most of what we read now is set in simple <a class="term" href="http://en.wikipedia.org/wiki/Serif">serif</a> and <a class="term" href="http://en.wikipedia.org/wiki/Sans_serif">sans serif</a> typefaces, whether in print or online.
+      </p>
+
+      <p>
+        Beyond the question of readability, much of typography comes down to contrast and form. The details of a typeface can inject meaning into a design: Soft lines and stroke weights, for example, can be useful for delicate material or to give an air of elegance
+        and dignity. Those same attributes can be juxtaposed with unexpected content to produce an ironic effect.
+      </p>
+
+      <p>
+        Here’s a list of qualities and methods to keep in mind as you venture into the widening world of web type.
+      </p>
+
+
+
+      <h2>The drop dead guide to choosing and pairing typefaces</h2>
+      <p>
+        As we look to our coffers for new selections of typefaces, the smart money stays true to what we know: Find typefaces that are in our general realm of readability—the ones we use and read on a daily basis. Anything that hits on those points on the “legibility
+        spectrum” (possibly a four quadrant graph) will be best, and will be easier to read. The farther we veer away from that, the more difficult our designs will be to read. That’s not to say there isn’t a wide gray area of legibility.
+      </p>
+
+      <h3>Contrast</h3>
+      <p>
+        Contrast is probably the most important thing to keep in mind. When pairing typefaces, it’s important to be able to tell that there are two distinct typefaces in play, but contrast has other uses as well. Very different typefaces can play off of each
+        other in complementary ways or resist each other to create a bit of tension, while typefaces that appear too similar can weaken the message and confuse a design’s visual language.
+      </p>
+      <h3>The basics of body text</h3><img src="../images/bobulate.png" alt="">
+      <p><a href="http://bobulate.com/">Bobulate.com</a> using <a href="http://www.type-together.com/Skolar">TypeTogether’s Skolar</a>, served via <a href="http://typekit.com/">Typekit</a>.</p>
+      <p>
+        When choosing typefaces, I like to start by picking a text face for body copy, as this is what a reader will spend the most time looking at. For body copy, look for typefaces that are sturdy and legible at smaller sizes, and for those that have a healthy
+        contrast between characters.
+      </p>
+      <p>
+        The best text faces generally have some personality, but not so much that it distracts us from the content or experience of reading. Typefaces that have a lot of personality are better reserved for display sizes, as they can become cumbersome to read
+        in longer passages.
+      </p>
+
+      <h3>Read me</h3>
+      <img src="../images/legible.png" alt="">
+      <p>As text gets smaller, a slightly larger x-height and contrast can go a long way.</p>
+      <p>
+        The usual conventions to selecting type apply for on screen use too, but due to the disparity in quality between the screen and a printed page, those conventions should be followed even more closely on screen, and possibly even exaggerated a little. High
+        <a class="term" href="http://en.wikipedia.org/wiki/X-height">x-heights</a> and a strong character body help keep your texts legible, even at small sizes. For instance, <a href="http://en.wikipedia.org/wiki/Verdana">Verdana</a> and <a href="http://en.wikipedia.org/wiki/Georgia_(typeface)">Georgia</a>,
+        both proven screen typefaces, have a larger x-height and a bit more space between the letters so that text retains clarity even at small sizes.
+      </p>
+
+      <h3>What’s the message?</h3>
+      <img src="../images/grindhouse.jpg" alt="">
+      <p>This movie poster from the double feature, Grindhouse, uses lots of different typefaces and styles, but does so in imitation of the kinds of posters that were emblematic of late 1970s exploitation films.</p>
+      <p>
+        One helpful way to understand what you are designing for is to write down a general description of the qualities of the message you are trying to convey, and then look for typefaces that embody those qualities. If you are designing something serious,
+        a playful handwritten display typeface probably won’t work. But a sturdy typeface such as <a href="http://new.myfonts.com/fonts/adobe/franklin-gothic/roman/">Franklin Gothic</a> could convey stability and strength while imparting an air
+        of importance.
+      </p>
+      <p>
+        One typeface can be enough to say what you need to say, and two is usually plenty. If you are using more than that, have a good reason—like trying to achieve a certain aesthetic—such as replicating the look of an <a href="http://images.google.com/images?q=boxing+poster">old boxing</a>,
+        film, or music poster, for example.
+      </p>
+
+      <h3>One sans, one serif</h3>
+      <img src="../images/bodoni-futura.png" alt="">
+      <p>Bodoni and Futura have very different looking letterforms, but their structure is based on the same basic geometric principles.</p>
+      <p>
+        One of the easiest ways to quickly create balance and contrast in typography is to choose a serif and sans serif pairing. It’s a simple, easily managed combination that can produce a cohesive look to the text if you select the right typefaces.
+      </p>
+      <p>
+        It’s not a hard and fast rule, but typefaces from the same designer can sometimes work very well together. As in two paintings from the same artist, sometimes you can see the designer’s hand in two typefaces they’ve made. Eric Gill’s <a href="http://new.myfonts.com/fonts/adobe/perpetua/regular/">Perpetua</a>        and <a href="http://new.myfonts.com/fonts/adobe/gill-sans/regular/">Gill Sans</a> work well together because they share some of the same strokes and curves. Similarly, typefaces that were made to be paired, like <a href="http://www.fontshop.com/fontlist/super_families/ff_meta_sans_ff_meta_serif/">Meta Sans</a>        and <a href="http://metaserif.com/">Meta Serif</a>, often work well together.
+      </p>
+      <p>
+        Combining more than one <a class="term"  href="http://en.wikipedia.org/wiki/Typeface#Display_type">display</a> or <a class="term" href="http://en.wikipedia.org/wiki/Typeface#Script_typefaces">script</a> typeface is usually a bad idea. There are exceptions to every rule,
+        but these typefaces usually have so much personality that one is plenty and two could confuse the mood of the text.
+      </p>
+      <p>
+        Look for typefaces that were designed on similar principles. For instance, despite looking quite different, <a href="http://en.wikipedia.org/wiki/Futura_(typeface)">Futura</a> and <a href="http://en.wikipedia.org/wiki/Bodoni">Bodoni</a> can make
+        a great pair because they were both inspired by simple geometric forms.
+      </p>
+      <img src="../images/baskerville-futura.png" alt="">
+      <p>Baskerville and Futura, “old” juxtaposed with “new.”</p>
+      <p>
+        Alternatively, finding two divergent typefaces can create new meaning or an interesting juxtaposition, as long as the contrast is strong. Pairing a <a href="http://en.wikipedia.org/wiki/Baskerville">transitional typeface</a> like <a href="http://new.myfonts.com/fonts/adobe/itc-new-baskerville/roman/">Baskerville</a>        with a more modern face like Futura could create an interesting statement on the idea of old vs. new.
+      </p>
+
+      <h3>Explore different styles</h3>
+      <img src="../images/proxima-nova.png" alt="">
+      <p>Type families such as Mark Simonson’s <a href="http://www.ms-studio.com/FontSales/proximanova.html">Proxima Nova</a> contain a variety of weights which can be helpful in creating a design with diverse and flexible typographic possibilities.</p>
+      <p>
+        Choosing typeface families with a good selection of weights and styles gives you more flexibility without needing to introduce more typefaces. Play a bold off of a light or italic weight for contrast, or try all caps or small caps with a bit of letter-spacing
+        for a subhead. If you choose typefaces that only contain a single weight, you may find it very difficult to create the contrast that a passage requires to adequately distinguish sections visually.
+      </p>
+
+      <h3>To the library!</h3>
+      <p>
+        Many typefaces have an inherent connection with a cultural period or subculture. Depending on what you’re creating, this could be an advantage or a disadvantage. It’s always best to follow up on potential typeface choices by finding out where and when,
+        and for what purpose they were made. Sometimes a typeface can have the right “look” but evoke the wrong connotations. For instance, <a href="http://new.myfonts.com/fonts/adobe/trajan/trajan/">Trajan</a> has been appropriated as the typeface
+        of choice for epic, thriller, romantic, comedy, and well, <a href="http://www.vimeo.com/432490"><em>any</em> kind of film</a>, despite being nearly 1900 years old and Roman. <a href="http://en.wikipedia.org/wiki/Blackletter">Blackletter</a> typefaces
+        have long been a staple of heavy metal bands or anything that needs to feel “scary” or “dark.” Understand these cultural implications so that you can either avoid them or use them intelligently to bring clarity to your viewers.
+      </p>
+
+      <h3>Money, honey</h3>
+      <p>
+        We’ve been so accustomed to using system fonts that many web professionals balk at the idea of paying for fonts. But even when you use the typefaces that come with your computer, you’re using typefaces that you’ve paid to license—those costs are included
+        in the price of your operating system. There are many free fonts out there, but most of them are free for a reason: They’re often fine at display sizes, but kerning and hinting might not be up to snuff and many aren’t complete or robust enough
+        to be used in a serious way. Solid typefaces, like almost anything else of quality, usually cost money.
+      </p>
+
+      <h3>Trust your gut</h3>
+      <p>
+        Sometimes a pair of typefaces just looks or feels right together, even though you’re not sure why. These are guidelines, not laws: there are a myriad of types and styles, and sometimes you’ll be surprised what typefaces work together even when logic says
+        they shouldn’t.
+      </p>
+
+
+
+      <h2>Ever forward!</h2>
+      <p>
+        The number of typefaces available to us increases every day. If your favorite font isn’t available yet, chances are it will be soon enough, though the problem of licensing, delivering, and selecting web fonts won’t be figured out overnight.
+      </p>
+      <p>
+        As more typefaces hit the scene, we need to understand how they can best serve our designs, and to push ourselves to move beyond mere novelty in our selections. If much of the web is made up of text—and it is—web typography can be a very powerful tool
+        indeed.
+      </p>
+
+      <h3>Further Reading on Web Fonts</h3>
+      <ul>
+        <li><a href="http://nicewebtype.com/notes/2009/10/30/how-to-use-css-font-face/">How to use CSS @font-face</a>
+        </li>
+        <li><a href="http://www.smashingmagazine.com/2009/11/02/the-ails-of-typographic-anti-aliasing/">The Ails Of Typographic Anti-Aliasing</a>
+        </li>
+        <li><a href="http://arstechnica.com/web/news/2009/11/web-open-font-format-backed-by-mozilla-type-foundries.ars">Web Open Font Format backed by Mozilla, type foundries</a>
+        </li>
+        <li><a href="http://snook.ca/archives/html_and_css/becoming-a-font-embedding-master">Becoming a Font Embedding Master</a>
+        </li>
+      </ul>
+
+    </article>
+  </section>
+
+  <footer>
+    <h1 class="subtitle">For people who make websites.</h1>
+
+    <ul class="footer-nav">
+      <li><a href="/about">About</a>
+      </li>
+      <li><a href="/authors">Authors</a>
+      </li>
+      <li><a href="/about/masthead">Masthead</a>
+      </li>
+      <li><a href="/about/style-guide">Style Guide</a>
+      </li>
+      <li><a href="/contact">Contact</a>
+      </li>
+      <li><a href="/about/sponsor">Sponsorships</a>
+      </li>
+    </ul>
+
+    <ul class="copyright">
+      <li>
+        <small>ISSN 1534-0295 · Copyright © 1998–2015 A List Apart & Our Authors</small>
+        <small><a href="/about/copyright">Permissions & Copyright</a> · <a href="http://webtype.com">Fonts by Webtype</a> · <a href="/tools/log-in">Log In</a></small>
+      </li>
+
+      <li class="affiliates-container">
+        <a class="affiliates-link" href="http://aneventapart.com" title="An Event Apart">An Event Apart</a>
+        <a class="affiliates-link" href="http://happycog.com" title="Happy Cog">Happy Cog</a>
+        <a class="affiliates-link" href="http://abookapart.com" title="A Book Apart">A Book Apart</a>
+        <a class="affiliates-link" href="https://arcustech.com" title="Hosting provided by Arcustech">Arcustech</a>
+      </li>
+    </ul>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+#left-sidebar {
+	width: 20%;
+	float: left;
+}
+#main {
+	width: 80%;
+	float: left;
+}
+.two-col {
+	/* contain floats HTML & CSS book, page 374 */
+	width: 100%;
+	overflow: auto;
+}
+.col {
+	width: 50%;
+	float: left;
+}

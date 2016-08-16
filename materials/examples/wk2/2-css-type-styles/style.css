@@ -1,0 +1,27 @@
+body {
+	font-family: Georgia;
+	margin-left: 4em;
+	margin-top: 4em;
+}
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 2.2em;
+}
+h3 {
+	font-size: 2.8em;
+	font-weight: normal;
+}
+p {
+	font-size: 1.2em;
+	line-height: 1.6;
+	margin-bottom: 1.5em;
+	max-width: 40em;
+}
+
+code {
+	font-family: monospace;
+	font-size: 0.8em;
+	letter-spacing: .1em;
+}

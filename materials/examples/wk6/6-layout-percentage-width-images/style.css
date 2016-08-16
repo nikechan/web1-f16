@@ -1,0 +1,16 @@
+.bird {
+	position: relative;
+	padding: 1%;
+
+	width: 31%;
+	float: left;
+}
+.bird img {
+	width: 100%;
+}
+
+.bird .caption {
+	font-weight: bold;
+	position: absolute;
+	top: 0; left: 0;
+}

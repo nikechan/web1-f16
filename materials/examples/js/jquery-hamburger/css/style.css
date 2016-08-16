@@ -1,0 +1,98 @@
+/*////////////////////////////
+/
+/
+/
+/   General, whole page
+/
+/
+/
+////////////////////////////*/
+body {
+	color: #444;
+  font-family:"Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  margin: 2em 0.5em 1em 0.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*////////////////////////////
+/
+/
+/
+/   Navigation
+/
+/
+/
+////////////////////////////*/
+#menu-button {
+	margin-bottom: 0.4em;
+	cursor: pointer;
+	
+	background-color: #E8B7B6;
+	padding: 1px 10px;
+	border: solid 1px #999;
+}
+nav {
+	display: block;
+}
+ul {
+	padding: 0;
+	list-style-type: none;
+}
+nav a {
+	color: #444;
+	text-decoration: none;
+}
+nav a:hover {
+	color: black;
+	text-decoration: underline;
+}
+.small-hidden {
+	display: none;
+}
+
+
+
+
+
+
+
+
+/*////////////////////////////
+/
+/
+/
+/   Responsive breakpoints
+/   mobile-first responsive breakpoints
+/
+/
+/
+////////////////////////////*/
+@media screen and (min-width: 60em) { /* large-screen */
+	body {
+		max-width: 80%;
+		margin: 2em auto 1em auto;
+	}
+	nav li {
+		display: inline;
+		margin-right: 2em;
+		background-color: #E8B7B6;
+		padding: 1px 10px;
+	}
+	#menu-button {
+		display: none;
+	}
+	.small-hidden {
+		display: block;
+	}
+}

@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>JeeYoung Lee - Selected Images</title>
+  <meta name="description" content="Photographic selections of JeeYoung Lee">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Raleway:700,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Selections of JeeYoung Lee</h1>
+  <p>Since 2007,  Lee JeeYoung shoots the invisible. Whereas traditional photography submits extracts of reality to our eyes, the artist offers excerpts from her heart, her memory, or her dreams
+    <a href="http://www.opiomgallery.com/en/artistes/oeuvresphotographe/17/jeeyoung-lee">more…</a>
+  </p>
+
+
+  <div class="image-carrossel">
+    <div class="item"><img src="images/jeeyoung_lee_opiom_gallery_308.jpg" /></div>
+    <div class="item"><img src="images/jeeyoung_lee_opiom_gallery_309.jpg" /></div>
+    <div class="item"><img src="images/jeeyoung_lee_opiom_gallery_310.jpg" /></div>
+    <div class="item"><img src="images/JYL001-JeeYoungLEE-OPIOM-the-little-match-girl_160x128cm_Inkjet-print_2008.jpg" /></div>
+    <div class="item"><img src="images/JYL003-JeeYoungLEE-OPIOM-panic-room_180x144cm_Inkjet-print_2010.jpg" /></div>
+    <div class="item"><img src="images/JYL004-JeeYoungLee-OPIOM-Nightscape_120x96cm_Inkjet-print_2012.jpg" /></div>
+    <div class="item"><img src="images/JYL006-JeeYoungLEE-OPIOM-last-supper_120x96cm_Inkjet-print_2011.jpg" /></div>
+    <div class="item"><img src="images/JYL007-JeeYoungLEE-OPIOM-Ill-be-back_120x96cm_Inkjet-print_2010.jpg" /></div>
+  </div>
+
+  <div id="footer">
+    <p>Uses <a href="http://owlgraphic.com/owlcarousel/">OWL Carousel</a>.</p>
+  </div>
+
+
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="owl-carousel/owl.carousel.js"></script>
+
+  <script>
+  $(document).ready(function() {
+    // http://owlgraphic.com/owlcarousel/
+    var owlDiv = $(".image-carrossel");
+    owlDiv.owlCarousel({
+      items: 3,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+    });
+
+    // https://github.com/OwlFonk/OwlCarousel/issues/65
+    var owl = owlDiv.data('owlCarousel');
+    $(document).keydown(function(e) {
+      if (e.keyCode == 37) {
+        owl.prev();
+      } else if (e.keyCode == 39) {
+        owl.next();
+      }
+    });
+  });
+  </script>
+
+</body>
+
+</html>

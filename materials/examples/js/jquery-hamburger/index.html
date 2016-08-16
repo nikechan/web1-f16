@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Hamburger Menu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+	
+	<!-- for mobile menu -->
+	<script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1>Mobile Hamburger</h1>
+		<nav>
+			<!-- http://fortawesome.github.io/ Font Awesome icons -->
+			<span class="fa fa-bars" id="menu-button"> Menu</span>
+			
+			<ul id="main-menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="field.html">Field</a></li>
+				<li><a href="photo.html">Photo</a></li>
+				<li><a href="red.html">Red Flowers</a></li>
+				<li><a href="blue.html">Blue Flowers</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<img src="images/sunflower_small.jpg" alt="Echinacea purpurea, Botanical Garden, Munich, Germany">
+	<img src="images/sunflower_small.jpg" alt="Echinacea purpurea, Botanical Garden, Munich, Germany">
+	<img src="images/sunflower_small.jpg" alt="Echinacea purpurea, Botanical Garden, Munich, Germany">
+	<img src="images/sunflower_small.jpg" alt="Echinacea purpurea, Botanical Garden, Munich, Germany">
+	<img src="images/sunflower_small.jpg" alt="Echinacea purpurea, Botanical Garden, Munich, Germany">
+
+	<p>
+		The mobile menu is also known as the “hamburger” because the 3 horizontal lines look like a burger and bun
+	</p>
+
+	<script>
+		$(function(){
+			/* initially hidden on page-load */
+			$('#main-menu').addClass('small-hidden');
+
+			/* register onClick handler for menu button, to toggle hidden menu */
+			$('#menu-button').click(function() {
+				$('#main-menu').toggleClass('small-hidden');
+			});
+		});
+	</script>
+
+</body>
+
+</html>

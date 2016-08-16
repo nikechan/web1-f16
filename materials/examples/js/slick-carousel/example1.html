@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>JeeYoung Lee - Selected Images</title>
+  <meta name="description" content="Photographic selections of JeeYoung Lee">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1>Selections of JeeYoung Lee</h1>
+  <p>Since 2007,  Lee JeeYoung shoots the invisible. Whereas traditional photography submits extracts of reality to our eyes, the artist offers excerpts from her heart, her memory, or her dreams
+    <a href="http://www.opiomgallery.com/en/artistes/oeuvresphotographe/17/jeeyoung-lee">more…</a>
+  </p>
+
+  <div class="image-carrossel">
+    <div class="item"><img src="images/jeeyoung_lee_opiom_gallery_308.jpg" /></div>
+    <div class="item"><img src="images/jeeyoung_lee_opiom_gallery_309.jpg" /></div>
+    <div class="item"><img src="images/jeeyoung_lee_opiom_gallery_310.jpg" /></div>
+    <div class="item"><img src="images/JYL001-JeeYoungLEE-OPIOM-the-little-match-girl_160x128cm_Inkjet-print_2008.jpg" /></div>
+    <div class="item"><img src="images/JYL003-JeeYoungLEE-OPIOM-panic-room_180x144cm_Inkjet-print_2010.jpg" /></div>
+    <div class="item"><img src="images/JYL004-JeeYoungLee-OPIOM-Nightscape_120x96cm_Inkjet-print_2012.jpg" /></div>
+    <div class="item"><img src="images/JYL006-JeeYoungLEE-OPIOM-last-supper_120x96cm_Inkjet-print_2011.jpg" /></div>
+    <div class="item"><img src="images/JYL007-JeeYoungLEE-OPIOM-Ill-be-back_120x96cm_Inkjet-print_2010.jpg" /></div>
+  </div>
+
+  <div id="footer">
+    <p>Uses <a href="http://kenwheeler.github.io/slick/">slick Carousel</a>.</p>
+  </div>
+
+
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+
+  <script>
+  $(document).ready(function() {
+    // http://kenwheeler.github.io/slick/
+    $('.image-carrossel').slick({
+      infinite: false,
+      dots: true,
+      arrows: false,
+      speed: 250,
+      slidesToShow: 3,
+      slidesToScroll: 1
+    });
+  });
+  </script>
+
+</body>
+
+</html>

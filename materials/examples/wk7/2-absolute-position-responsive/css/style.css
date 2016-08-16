@@ -1,0 +1,66 @@
+body {
+	margin: 0 auto;
+	padding: 1em;
+	max-width: 45em;
+}
+
+p {
+	max-width: 30em;
+}
+
+.tile {
+	min-width: 200px; /* always contain the image */
+	position: relative;
+	padding: 10px;
+	padding-top: 220px; /* leave room for image */
+	
+	background-color: #eee;
+	color: #333;
+	border: solid #ddd 2px;
+	
+	margin-bottom: 1em; /* margin between tiles */
+}
+.tile img {
+	height: 200px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	margin: 0; padding: 0;
+}
+.tile p {
+	line-height: 1.3em;
+}
+.tile h2 {
+	margin: 0; padding: 0; line-height: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*////////////////////////////
+/
+/
+/
+/   Responsive breakpoints
+/   mobile-first responsive breakpoints
+/
+/
+/
+////////////////////////////*/
+@media screen and (min-width: 33em) { /* large-screen */
+	/* once we have enough horizontal space
+	   move the image to the left of the text */
+	.tile {
+		min-height: 200px; /* always contain the image */		
+		min-width: auto;
+		padding: 10px;
+		padding-left: 220px; /* leave room for image */
+	}
+}

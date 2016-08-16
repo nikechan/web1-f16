@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Homework #7 - Web 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Homework #7</h1>
+
+    <nav>
+      <ul>
+        <li><a href="../../index.html">Course Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Tasks</h2>
+    <ol class="sections">
+        <li>
+          <p><b>Student page</b>: Add a large screen responsive breakpoint to your student page</p>
+          <ul>
+            <li>At the very bottom of your CSS file add:
+            <code>
+              <pre>
+/* large-screen responsive breakpoint */
+@media screen and (min-width: 33em) {
+  /* we color h1 red just so
+     we know this break-point is working */
+  h1 { color: red; }
+}
+              </pre>
+            </code>
+            </li>
+
+            <li>Add 1 or more CSS properties in your large-screen breakpoint. You may delete the <code>color: red;</code> line.</li>
+            <li>Take 1 screenshot (or photograph) of your styled page on a phone, tablet or other small screen</li>
+            <li>Take 1 screenshot (or photograph) of your styled page on a large screen like a laptop or iMac</li>
+            <li>Show your screenshots as <code>&lt;img&gt;</code>s on your student page</li>
+          </ul>
+        </li>
+
+        <li>
+          <p><b>Final project</b>: Carefully prepare at least 1 JPG image for your final project.</p>
+          <ul>
+            <li>Read chapter 16 on images (from <i>HTML &amp; CSS</i>)</li>
+            <li>Add at least 1 well prepared <code>&lt;img&gt;</code> to your final project page. Your primary src image should be less than 100kb
+              <br><br>
+              <h4>in the html file:</h4>
+              <code>
+                <pre>
+  &lt;img class="portfolio-image" 
+  src="boxes-600px.jpg 
+  alt="several cardboard boxes"&gt;
+                </pre>
+              </code>
+
+              <h4>and in your CSS file, add something like</h4>
+              <code>
+                <pre>
+  .portfolio-image {
+    max-width: 200px;
+  }
+                </pre>
+              </code>
+
+
+            </li>
+          </ul>
+        </li>
+
+    </ol>
+  </section>
+
+  <section>
+		<h2>Resources</h2>
+    <h3>Reading</h3>
+    <ul>
+      <li>
+				<span>HTML &amp; CSS &mdash;Chapter 16: Images</span>
+			</li>
+			<li>
+				<span>HTML &amp; CSS &mdash;Chapter 14: Lists, Tables and Forms</span>
+			</li>
+    </ul>
+    
+    <h3>Reference (optional)</h3>
+    <ul>
+      <li>
+        <a href="https://drive.google.com/a/massart.edu/folderview?id=0B89VTTD48zTAZ2JDNk9hU3hCd00&usp=sharing">Practical Responsive Images</a> &mdash;Chapter 3: The srcset and sizes attributes, and the picture element
+      </li>
+    </ul>
+
+		<h3>Resonsive Web Design Examples</h3>
+		<ul>
+			<li><a href="http://www.bostonglobe.com/">The Boston Globe</a> —first major website to create a responsive layout</li>
+			<li><a href="http://ethanmarcotte.com/">Ethan Marcotte</a> —inventor of responsive web design, Boston local.</li>
+      <li><a href="http://alistapart.com/">A List Apart</a></li>
+      <li><a href="http://hicksdesign.co.uk/">Hicks Design</a></li>
+      <li><a href="http://colly.com/">Simon Collison Portfolio Site</a></li>
+      <li><a href="https://www.gov.uk/">GOV.UK</a></li>
+			<li><a href="http://home.web.cern.ch/">CERN</a></li>
+      <li><a href="http://mediaqueri.es/">mediaqueri.es</a></li>
+		</ul>
+
+		<h3>previous readings</h3>
+		<ul>
+			<li>
+				<span class="done">HTML &amp; CSS &mdash;Introduction</span>
+			</li>
+			<li>
+				<span class="done">HTML &amp; CSS &mdash;Chapter 1: Structure</span>
+			</li>
+			<li>
+				<span class="done">HTML &amp; CSS &mdash;Chapter 2: Text</span>
+			</li>
+			<li>
+				<span class="done">HTML &amp; CSS &mdash;Chapter 5: Images</span>
+			</li>
+			<li>
+				<span class="done">HTML &amp; CSS &mdash;Chapter 10: Introducing CSS</span>
+			</li>
+			<li>
+				<span class="done">HTML &amp; CSS &mdash;Chapter 11: Color</span>
+			</li>
+			<li>
+				<span class="done">HTML &amp; CSS &mdash;Chapter 12: Text</span>
+			</li>
+			<li>
+				<span class="done">HTML &amp; CSS &mdash;Chapter 13: Boxes</span>
+			</li>
+			<li>
+				<span class="done">HTML &amp; CSS &mdash;Chapter 15: Layout</span>
+			</li>
+		</ul>
+	</section>
+
+</body>
+
+</html>

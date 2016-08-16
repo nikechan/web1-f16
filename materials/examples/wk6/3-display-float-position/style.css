@@ -1,0 +1,322 @@
+/*////////////////////////////
+/
+/
+/
+/   Margin, padding, width
+/   we can make simple easy layouts with margin, padding
+/   and auto
+/
+/
+/
+////////////////////////////*/
+/* center entire page */
+body {
+	/*max-width: 600px;
+	margin: 1em auto;*/
+}
+img {
+	/* max-width 100% is special, it means don't be bigger
+	 * than your container, it can shrink images, we
+	 * usually always set max-width: 100% on all images because
+	 * this is useful, but not always, if we have image heavy designs
+	 * and we want a lot of control */
+	/*max-width: 100%;*/
+}
+
+
+
+/* we can use negative margins to pull text 
+ * here we can push away the body from the web-browser edge
+ * then pull the logo back left with a negative margin
+*/
+body {
+	/*padding-left: 100px;
+	max-width: 44em;*/
+}
+#logo {
+	/* first everything has been pushed 100px with body padding
+	 * then will pull, just the logo, back that same amount
+	 */
+	/*margin-left: -100px;
+	margin-top: 0;*/
+	
+	/* try	margin-left: -120px; to crop some of the logo */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*////////////////////////////
+/
+/
+/
+/   Display: inline, block, none
+/   determines stacking type
+/
+/   by default:
+/   text markup is inline: b, em, i, span
+/   most other elements are block: div, p, h1/h2…
+/   images are inline-block
+/   but you can change all of them.
+/
+/ in addition to inline vs block, there are dozens more display types
+/ that influence the way elements are drawn to the screen and how they interact
+/ with elements near them.
+/ see: https://developer.mozilla.org/en-US/docs/Web/CSS/display   
+/
+/ http://www.impressivewebs.com/difference-block-inline-css/
+/ http://stackoverflow.com/questions/9189810/css-display-inline-vs-inline-block
+/
+////////////////////////////*/
+nav ul {
+	padding: 0;
+}
+nav li {
+	margin-right: 2em;
+	/* by default li are display: list-item */
+	/*display: inline;*/
+}
+
+
+/* inline elements will line up horizontally as many as can fit */
+/*h1,h2,h3,img,ul,li,p,span,a,header,nav,article,section {
+	display: inline;
+}*/
+
+/* block elements will line up vertically one-element wide */
+/*h1,h2,h3,img,ul,li,p,span,a,header,nav,article,section {
+	display: block;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*////////////////////////////
+/
+/
+/
+/   Floating
+/   floating elements takes them out of the normal flow
+/   and into the float flow, and they can either be float left
+/   or float right
+/  
+/
+////////////////////////////*/
+/* 1st content image */
+#webtype {
+	/* take out of flow, to the left 
+	 * content below me will re-flow around me
+	 * try float: left
+	 * or float: right
+	 */
+	 
+	 /*float: left;*/
+	 /*float: right;*/
+}
+
+/* we can also float text */
+h2 {
+	/*float: left;
+	margin: 0 2em 0.25em 0;
+	text-decoration: underline;
+	color: #555;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  
+/
+/
+/    Positioning with 
+/    static, relative, absolute and fixed
+/
+/    we can move elements around in more fine-grained ways
+/    with the position property 
+/
+/    absolute and fixed remove the element from flow
+/    so we must be more careful with them. Flow is our friend
+/
+/    position: static; is the default for all elements
+/
+*/
+
+/*////////////////////////////
+/
+/
+/
+/   position: relative
+/
+/
+/
+/
+////////////////////////////*/
+#page-name {
+	 /*position: relative;
+	 left: 15px;
+	 top: -70px;
+	 color: white;*/
+}
+
+#webtype {
+	/* when we move an element with position: relative, it still
+	 * takes up space in the normal flow, where it left from. */
+	/*position: relative;
+	right: 100px;;*/
+}
+
+
+
+
+
+
+
+
+
+/*////////////////////////////
+/
+/
+/
+/   position: absolute
+/
+/
+/
+/
+////////////////////////////*/
+/* position absolute is the most useful
+ * and one of the most abused (by web designers) method
+ * of positioning, but can be extremely useful if you understand 
+ * it's limitations */
+#logo {
+	/* position absolute takes our logo out of the flow
+	 * so it can now overlap other elements and "break" our layout
+	 * we must be really careful about accidental overlap when using position: absolute 
+	 */
+	/*position: absolute;
+	margin: 0;
+	right: 0; top: 0;*/
+} 
+ 
+/* we could guard against this potential overlap by only moving our logo
+ * when we know there will be enough room, IE with a media query */
+/*@media screen and (min-width: 1200px) {
+	#logo {
+		position: absolute;
+		margin: 0;
+		right: 0; top: 0;
+	}
+}*/
+
+/*#webtype {
+	position: absolute;
+	right: 0;
+	top: 0;
+}*/
+
+/* position absolute places elements relative to the nearest
+ * parent who has position absolute or relative, usually this is the 
+ * body, but we can change that */
+/*article {
+	position: relative;
+	padding-top: 100px;
+}
+#page-name {
+	font-size: 100px;
+	margin: 0;
+	position: absolute;
+	top: 0;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+/*////////////////////////////
+/
+/
+/
+/   position: fixed
+/
+/   position fixed is not used very much because
+/   Apple didn't want to enable it on the original iPhone because at the time
+/   web designers had created huge banners that would have take up half the iPhone
+/   screen if the iPhone actually displayed them fixed
+/   http://www.quirksmode.org/blog/archives/2010/12/the_fifth_posit.html
+/   
+/
+////////////////////////////*/
+/* afix navigation to top of page 
+ * always leave enough padding on the body, by adding padding
+ * to the side we are afixing something
+*/
+/*body {
+	padding-top: 44px;
+}
+nav {
+	position: fixed;
+	top: 0;
+	height: 44px;
+
+	background-color: black;
+	color: white;
+	width: 100%;
+	padding-left: 3em;
+}
+ul li {
+	display: inline;
+}
+nav a {
+	color: #eee;
+	text-decoration: none;
+}
+nav a:hover {
+	color: white;
+	text-decoration: underline;	
+}*/
+
+
+
+/* we can also afix to multiple sides! */
+/*#page-name {
+	position: fixed;
+	right: 0; bottom: 0;
+	margin: 0;
+	font-size: 100px;
+	color: rgba(100,0,0,0.6);
+}*/

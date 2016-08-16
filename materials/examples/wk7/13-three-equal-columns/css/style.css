@@ -1,0 +1,65 @@
+body {
+	margin: 1em;
+	/* add scrollbars if browser smaller than
+	   900px */
+	min-width: 900px;
+}
+.column {
+	float: left;
+	width: 32.6%; /* (100-1-1) / 3 */
+	padding-right: 1%;
+}
+.column.last { /* remove padding from last column */
+	padding-right: 0;
+}
+
+
+p {
+	max-width: 30em;
+}
+nav {
+	margin: 2em 0 0 2em;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0; padding: 0;
+}
+nav li {
+	margin-bottom: 0.5em;
+}
+nav a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+nav a:hover {
+	text-decoration: underline;
+}
+
+
+
+.tile {
+	min-height: 200px; /* always contain the image */		
+	position: relative;
+	padding: 10px;
+	padding-left: 220px; /* leave room for image */
+	
+	background-color: #eee;
+	color: #333;
+	border: solid #ddd 2px;
+	
+	margin-bottom: 1em; /* margin between tiles */
+}
+.tile img {
+	height: 200px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	margin: 0; padding: 0;
+}
+.tile p {
+	line-height: 1.3em;
+}
+.tile h2 {
+	margin: 0; padding: 0; line-height: 1;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tools - Intro to Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Tools</h1>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html">Course Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>ATOM</h2>
+    <p class="software">
+      <img src="images/atom_logo_app.png">
+      <a href="https://atom.io/">Atom</a> is the text-editor we use to create and edit all of our HTML and CSS files during web development. First <a href="https://atom.io/">download</a> and install the program. Atom is customizable with *packages*, there are a few you should install to make web development easier (namely auto adding of ending tags and automatic checking of code), see below.
+    </p>
+
+    <h3>Packages</h3>
+    <ul class="decorate">
+      <li>open Atom</li>
+      <li>go to menu <b>Atom - Preferences</b></li>
+      <li>then click + Install</li>
+      <li>under section <b>Install Packages</b> where it says  <b>Search Packages</b> find and install the following packages by copy-pasting the name and hitting enter:
+        <ul>
+          <li>atom-beautify</li>
+          <li>autoclose-html</li>
+          <li>autocomplete-plus</li>
+          <li>pretty-json</li>
+          <li>HTMLHint</li>
+          <li>color-picker (press command shift c) to bring up color picker</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>Settings</h3>
+    There are few settings worth changing in Atom. From the menu bar, <code>Atom - Preferences…</code>
+    <ul>
+      <li>Under Packages search for Whitespace, uncheck Remove Trailing Whitespace</li>
+    </ul>
+
+    <p>
+      Additional Atom documentation is available on their <a href="https://atom.io/docs/latest/">documentation page</a>.
+    </p>
+  </section>
+
+  <section>
+    <h2>Cyberduck</h2>
+    <p class="software">
+      <img src="images/cyberduck-icon-384.png">
+      <a href="https://cyberduck.io/">Cyberduck</a> is the software we use to upload our files to a web-server so that anyone may see them. First <a href="https://cyberduck.io/">download</a> and install the program. Then create a bookmark so that you may easily connect to your student page.
+    </p>
+
+    <h3>Create a new bookmark:</h3>
+    <ol>
+      <li><b>Change the first drop-down menu to </b> SFTP</li>
+      <li><b>nickname: </b>MassArt Students</li>
+      <li><b>server: </b>massart.andrewringler.com</li>
+      <li><b>username: </b>given to you by Andrew</li>
+      <li><b>password: </b>given to you by Andrew</li>
+      <li><b>path: </b>www/</li>
+    </ol>
+
+    <p>
+      Additional Cyberduck documentation is available on the <a href="https://trac.cyberduck.io/wiki/help/en">Cyberduck help page</a>.
+    </p>
+  </section>
+
+  <section>
+    <h2>Digital Color Meter</h2>
+    <p class="software">
+      <img src="images/digital_color_meter.png">
+      <b>Digital Color Meter</b> is used to sample colors from any on-screen color, from images, websites, icons etc… (Mac Only in Applications/Utilities).
+    </p>
+
+    <h3>Settings to change:</h3>
+    <ol>
+      <li>Change the drop-down to <em>Display in Generic RGB</em></li>
+      <li>In the <em>View</em> menu change <em>Display Values</em> to <b>as Hexadecimal</b></li>
+    </ol>
+
+    <p>
+      Now to sample a color. Make sure <b>Digital Color Meter</b> is running and is in focus, hover over the color you want to sample and press <code>command shift c</code>, the color value is now in your clipboard, <code>command v</code> to paste into your CSS file.</p>
+
+    <p><span class="highlight">Note</span> if you click on the window you want to sample then <em>Digital Color Meter</em> will no longer be the focused app and <code>command shift c</code> won't work, always <code>command tab</code> to the <em>Digital Color Meter</em> app before sampling then hit <code>command shift c</code></p>
+  </section>
+  
+  <section>
+    <h2>WhatFont</h2>
+    <p class="software">
+      <img src="images/whatfont_logo.png">
+      <a href="http://chengyinliu.com/whatfont.html">WhatFont</a> is a browser extension for Google Chrome that allows you to see which font the web browser is actually using to display a particular text element on the page. This is useful to verify your webfonts are working.
+    </p>
+    
+    <h3>Usage</h3>
+    <ol>
+      <li>In Google Chrome visit the webpage for the <a href="https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm">browser extension</a> and click install</li>
+      <li>Now visit a webpage and click the WhatFont icon (in the top right-hand corner of the page). Now hovering over text elements will display their font, and clicking them will bring up additional information.        
+      </li>
+    </ol>
+    <p>
+      <span class="highlight">Note</span> that WhatFont only works on http and https pages. It will not work when testing your webpage locally with the file:// protocol. 
+    </p>
+  </section>
+  
+  <section>
+    <h2>Adobe Color</h2>
+    <p class="software">
+      <img src="images/adobekuler_logo.png">
+      <a href="https://color.adobe.com/">Adobe Color</a> (formerly Kuler) is an excellent interactive tool for creating color palettes for your webpages. There is nothing to download, just visit the webpage and start using it. Adobe Color is also available as an iPhone app, with the added feature of generating color palettes from your phone photos.
+    </p>
+  </section>
+
+</body>
+
+</html>

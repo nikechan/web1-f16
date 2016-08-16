@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>The Template Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+  
+  <script src="js/packery.pkgd.min.js"></script>
+</head>
+
+<body class="splash">
+
+  <div id="container">
+    <img class="item" src="images/IMG_3742.JPG">    
+    <img class="item" src="images/IMG_3757.JPG">    
+    <img class="item" src="images/IMG_3758.JPG">    
+    <img class="item" src="images/IMG_3764.JPG">    
+    <img class="item" src="images/IMG_3765.JPG">    
+    <img class="item" src="images/IMG_3742.JPG">    
+    <img class="item" src="images/IMG_3757.JPG">    
+    <img class="item" src="images/IMG_3758.JPG">    
+    <img class="item" src="images/IMG_3764.JPG">    
+    <img class="item" src="images/IMG_3765.JPG">    
+  </div>
+
+  <script>
+    var container = document.querySelector('#container');
+    var pckry = new Packery( container, {
+    // options
+    itemSelector: '.item',
+    gutter: 10
+    });
+  </script>
+
+</body>
+</html>

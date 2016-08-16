@@ -1,0 +1,24 @@
+Progressive Enhancement
+Layers
+HTML & Content (alt tags on images)
+CSS
+Javascript
+
+Testing
+IE virtual machines: https://www.modern.ie
+https://ftp.mozilla.org/pub/mozilla.org/firefox/releases/
+http://browsershots.org/
+
+Browsers
+http://caniuse.com/usage_table.php
+
+
+Books:
+
+By Scott Jehl
+Designing with Progressive Enhancement. Peachpit/New Riders, 2010
+Responsible Responsive Design. A Book Apart, 2014
+http://scottjehl.com/
+
+Adaptive Web Design
+http://adaptivewebdesign.info/1st-edition/

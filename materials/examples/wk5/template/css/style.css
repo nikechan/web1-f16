@@ -1,0 +1,80 @@
+/*////////////////////////////
+/
+/
+/
+/   General, whole page
+/
+/
+/
+////////////////////////////*/
+h1 {
+	/* CHANGE ME! */
+	color: white;
+	background-color: purple;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*////////////////////////////
+/
+/
+/
+/   Components
+/
+/
+/
+////////////////////////////*/
+.highlight {
+	background-color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*////////////////////////////
+/
+/
+/
+/   Responsive breakpoints
+/   mobile-first responsive breakpoints
+/
+/
+/
+////////////////////////////*/
+@media screen and (min-width: 33em) { /* large-screen */
+	h1 {
+		/* CHANGE ME!
+		   Change your browser window size to see how I behave */
+		color: pink;
+		background-color: black;
+	}
+}

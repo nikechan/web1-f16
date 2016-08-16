@@ -1,0 +1,234 @@
+/*////////////////////////////
+/
+/
+/
+/   General, whole page
+/
+/
+/
+////////////////////////////*/
+body {
+  color: #222;
+  /* https://web.archive.org/web/20130331205934/http://cssfontstack.com/ */
+  font-family:"Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  margin: 0.5em auto 1em auto;
+  padding: 0 0.5em 0 0.5em;
+  max-width: 600px;
+}
+pre {
+  padding: 1em;
+  margin: 0.5em 0;
+  background: #f5f2f0;
+}
+p:first-of-type { margin-top: 0.2em; }
+
+/* Headings */
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+h2 { font-size: 1.3em; margin: 2em 0 0.2em 0; }
+h3 { margin: 0.1em 0 0.2em 0; }
+h4 { margin: 0.1em 0 0.2em 0; text-decoration: underline; font-weight: normal; font-size: 1em; }
+h5 { margin: 1em 0 0.2em 0; font-size: 0.8em; }
+
+
+/* Links */
+a, a:visited {
+  color: steelblue;
+  text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active {
+  text-shadow: 0 0 0.2em rgba(150,150,255,0.2), 0 0 0.2em rgba(150,150,255,0.2), 0 0 0.2em rgba(150,150,255,0.2);
+  text-decoration: underline;
+}
+
+/* lists */
+ul {
+  list-style-type: none;
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+ol.sections > li {
+  margin-bottom: 0.5em;
+}
+li ul { /* nested-lists */
+  margin: 5px 0 0 1em;
+  list-style-type: circle;
+}
+.decorate {
+  list-style-type: disc;
+  padding-left: 1em;
+}
+dt {
+  font-weight: bold;
+}
+dd { margin: 0 0 0.5em 0; }
+
+
+
+
+
+
+
+
+
+
+/*////////////////////////////
+/
+/
+/
+/   Navigation / header
+/
+/
+/
+////////////////////////////*/
+header { margin-bottom: 3em; }
+nav {
+  font-size: 1.1em;
+  font-weight: bold;
+  text-transform: lowercase;
+  font-family: font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  letter-spacing: 0.025em;
+}
+nav ul, nav li {
+  display: inline;
+  margin-right: 0.6em;
+}
+.subtitle {
+  font-size: 0.7em;
+  font-style: italic;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*////////////////////////////
+/
+/
+/
+/   Components
+/
+/
+/
+////////////////////////////*/
+.software img {
+  max-width: 100px;
+  float: left;
+  padding: 10px 1em 5px 0;
+}
+.software {
+  /* clearfix, http://learnlayout.com/clearfix.html */
+  overflow: auto;
+  zoom: 1;
+}
+
+.highlight {
+  background: yellow;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.done {
+  opacity: 0.8;
+  text-decoration: line-through;
+}
+.assignment header h1 {
+  margin-bottom: 0;
+}
+.assignment header h2 {
+  font-size: 1.8em;
+  font-style: italic;
+  margin: 0 0 0.75em 0;
+}
+.review {
+}
+.note {
+  font-size: 14px;
+  font-style: italic;
+  text-decoration: underline;
+  color: #222;
+}
+img.screenshot {
+  max-width: 300px;
+  text-align: left;
+  border: solid 10px #ddd;
+  margin: 1em 0 1em 0;
+}
+
+
+
+/*////////////////////////////
+/
+/
+/
+/   Schedule
+/
+/
+/
+////////////////////////////*/
+table.schedule td {
+  vertical-align: top;
+}
+table.schedule td:nth-child(1) {
+  font-weight: bold;
+  min-width: 2em;
+}
+table.schedule td:nth-child(2) {
+  font-weight: bold;
+  min-width: 7em;
+}
+table.schedule h3 {
+  font-size: 1em;
+  display: inline;
+  background-color: black;
+  color: #fefefe;
+  padding: 1px 3px 1px 3px;
+}
+.no-school {
+  color: black !important;
+  background-color: #eee !important;
+}
+#divider {
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+#divider .container {
+  color: black;
+  background-color: rgba(246, 252, 179, 0.4);
+  border-radius: 2px;
+  border: solid 1px rgba(246, 252, 179, 0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*////////////////////////////
+/
+/
+/
+/   Responsive breakpoints
+/
+/
+/
+/
+////////////////////////////*/
+@media screen and (min-width: 33em) { /* large-screen */
+  body { margin: 5em auto; }
+
+  h1 { font-size: 4em; }
+  h2 { font-size: 1.8em; }
+}

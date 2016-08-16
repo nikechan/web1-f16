@@ -1,0 +1,50 @@
+Responsive Web Design
+
+examples
+images and retina
+
+
+
+
+
+TODO
+% grids
+gridpak
+
+CSS states
+hover
+
+horizontal scrolling website
+single page layout
+
+
+
+
+images and retina
+
+img {
+	max-width: 100%;
+}
+
+mobile-first break points again
+
+http://gridpak.com/
+https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries
+
+
+
+Notes:
+fixed layout header nav
+display: none
+background image: cover
+horizontal scrolling
+(fixed on mobile)
+vertical scroll highlight (id)
+image replacement
+gradient background
+large image backgrounds
+layering
+lazy loading of images
+
+HW:
+portfolio page

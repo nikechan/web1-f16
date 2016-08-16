@@ -1,0 +1,39 @@
+#left-sidebar {
+	width: 150px;
+	float: left;
+}
+#main {
+	padding-left: 150px;
+}
+img.inline {
+	float: left;
+	margin: 0.5em 0.5em 0.5em 0;
+}
+/* clear floats */
+.clear {
+	clear: left;
+}
+.birds {
+}
+
+/* http://pea.rs/ */
+/* self-clear floats */
+.birds:after {
+	content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.bird {
+	float: left;
+	margin-right: 20px;
+}
+.bird img, .bird .caption {
+	display: block;
+}
+.bird .caption {
+	font-weight: bold;
+	margin-top: 3px;
+}

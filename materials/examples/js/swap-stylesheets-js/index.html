@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Swap stylesheets</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link id="pagestyle" rel="stylesheet" type="text/css" href="css/light.css">
+</head>
+
+<body>
+	<div class="container">
+		<h1>Swap stylesheets</h1>
+		<!-- http://alistapart.com/article/alternate/# -->
+
+		<button onclick="swapStyleSheet('css/dark.css')">Dark Style Sheet</button>
+		<button onclick="swapStyleSheet('css/light.css')">Default Style Sheet</button>
+	</div>
+
+	<script>
+		function swapStyleSheet(sheet) {
+			var a = document.getElementById('pagestyle');
+			a.disabled = true;
+			a.setAttribute('href', sheet);
+			a.disabled = false;
+		}
+	</script>
+</body>
+</html>

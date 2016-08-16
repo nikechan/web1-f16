@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>FitText</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<div class="container">
+		<header>
+			<h2 id="fittext1">Squeeze with FitText</h2>
+			<h2 id="fittext2">Squeeze with FitText</h2>
+			<h2 id="fittext3">Squeeze with FitText</h2>
+		</header>
+		<p>FitText makes font-sizes flexible. Use this plugin on your fluid or responsive layout to achieve scalable headlines that fill the width of a parent element.</p>
+		<p>
+			Made with <a href="http://fittextjs.com/">FitText</a>
+		</p>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.fittext.js"></script>
+	<script type="text/javascript">
+		// basic example, defaults, compressor level 1
+		$("#fittext1").fitText();     
+		
+		// Turn the compressor up to 1.2 (resizes more aggressively)
+		$("#fittext2").fitText(1.2);
+		
+		// Turn the compressor up 1.1 (resizes more aggressively)		
+		// set a minimum and maximum font size to use regardless of the container size
+		$("#fittext3").fitText(1.1, {
+			minFontSize: '50px',
+			maxFontSize: '75px'
+		});
+	</script>
+
+</body>
+</html>

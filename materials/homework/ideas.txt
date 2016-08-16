@@ -1,0 +1,13 @@
+Style a news site using only CSS type properties. Pick final project (1 sentence summary of idea)
+
+Writing good copy. Artist portolio (part 1/2) single-column small-screen layout. Written proposal of final project.
+
+Add 1 breakpoint to artist's portfolio project (part 2/2). Final project style tyles &amp; inspiration images.
+
+Sitemap &amp; paper prototype of final site. <em>Bring headphones to class next week</em>.
+
+3 HTML pages for final site.
+
+CSS design for final site.
+
+Add CSS animations to your final site.

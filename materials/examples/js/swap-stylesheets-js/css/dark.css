@@ -1,0 +1,14 @@
+body {
+	margin: 4em auto;
+	max-width: 400px;
+}
+div.container {
+	padding: 1em;
+	min-height: 600px;
+	background-color: black;
+	color: white;
+}
+button {
+	background-color: black;
+	color: white;
+}

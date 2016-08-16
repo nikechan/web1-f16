@@ -1,0 +1,27 @@
+body {
+	background: #233a40;
+	color: #fff;
+	font: 16px/1.8 sans-serif;
+}
+.container {
+	width: 84%;
+	margin: 0 auto;
+	max-width: 1140px;
+}
+header {
+	width: 100%;
+	margin: 0px auto;
+}
+h2 {
+	background: rgba(0, 0, 0, 0.2);
+	text-align: center;
+	color: #fff;
+	font: 95px/1 "Impact";
+	text-transform: uppercase;
+	display: block;
+	text-shadow: #253e45 -1px 1px 0, #253e45 -2px 2px 0, #d45848 -3px 3px 0, #d45848 -4px 4px 0;
+	margin: 5% auto 5%;
+}
+a {
+	color: white;
+}

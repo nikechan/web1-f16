@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Lightbox with Colorbox</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="../../../../../css/style.css">
+
+	<!-- for colorbox library -->
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<link rel="stylesheet" href="js/colorbox/colorbox.css" />
+	<script src="js/colorbox/jquery.colorbox-min.js"></script>
+</head>
+
+<body>
+	<h1>Lightbox with Colorbox</h1>
+
+	<p>
+		<a href="http://html5doctor.com/the-figure-figcaption-elements/">figcaption</a>
+	</p>
+
+	<p>
+		<a class="lightbox" href="images/sunflower_large.jpg" title="Echinacea purpurea, Botanical Garden, Munich, Germany">
+			<figure>
+				<img src="images/sunflower_small.jpg" alt="Echinacea purpurea, Botanical Garden, Munich, Germany">
+				<figcaption>Diego Delso, Wikimedia Commons, License CC-BY-SA 3.0</figcaption>
+				<!-- http://commons.wikimedia.org/wiki/File:Echinacea_purpurea,_Jard%C3%ADn_Bot%C3%A1nico,_M%C3%BAnich,_Alemania,_2013-09-08,_DD_01.jpg -->
+			</figure>
+		</a>
+	</p>
+
+	<script>
+		$(document).ready(function() {
+			$('.lightbox').colorbox({maxWidth:'80%',maxHeight:'80%',opacity:'0.2'});
+		});
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+/*////////////////////////////
+/
+/
+/
+/   Primary Styling
+/
+/
+/
+////////////////////////////*/
+body {
+	min-width: 810px; /* 200 + 600 + 10 */
+	margin-bottom: 2em;
+	
+	/* create grey sidebar, see http://alistapart.com/article/fauxcolumns */
+	background: #fff url(sidebar_gray.gif) repeat-y 0 0;
+}
+#sidebar {
+	position: absolute;
+	left: 0; top: 0;
+	width: 200px;
+	padding-top: 1em;
+}
+#main {
+	padding-left: 250px;
+	max-width: 600px;
+}
+#header {
+	margin: 0 0 2em 0;
+}
+#pagetitle {
+	font-weight: bold;
+	font-size: 3em;
+	color: #858585;
+	margin: 1em 0 0 0;
+}
+.page-description {
+	margin: 0.5em 0 0 0;
+}
+.section_header {
+	font-weight: bold;
+	font-size: 1.6em;
+	margin-top: 2em;
+}
+.description {
+	margin-bottom: 1em;
+}
+
+
+
+
+/*////////////////////////////
+/
+/
+/
+/   Site navigation
+/
+/
+/
+////////////////////////////*/
+.navigation {
+	margin: 2em 0 0 2em;
+}
+.navigation ul {
+	list-style-type: none;
+	margin: 0; padding: 0;
+}
+.navitem {
+	margin-bottom: 0.5em;
+}
+.navitem a {
+	text-decoration: none;
+	font-size: 1.5em;
+	color: #fff;
+	font-weight: bold;
+}
+.navitem a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
+
+/*////////////////////////////
+/
+/
+/
+/   Tiles
+/
+/
+/
+////////////////////////////*/
+.tile {
+	min-height: 200px; /* always contain the image */		
+	position: relative;
+	padding: 10px;
+	padding-left: 220px; /* leave room for image */
+	
+	background-color: #eee;
+	color: #333;
+	border: solid #ddd 2px;
+	
+	margin-bottom: 1em; /* margin between tiles */
+}
+.tile img {
+	height: 200px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	margin: 0; padding: 0;
+}
+.tile .description {
+	line-height: 1.3em;
+}
+.tile .title {
+	margin: 0; padding: 0; line-height: 1;
+}

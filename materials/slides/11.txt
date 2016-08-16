@@ -1,0 +1,24 @@
+Schedule:
+
+Final workshop from 6:30-7:45pm
+- break
+* wrap-up talk
+- final presentations
+
+
+
+Icon fonts
+Logos, image replacement
+CSS3, animation, multiple backgrounds
+less/sass
+paralax
+HTML5
+version control, github
+squarespace, https://webflow.com/
+starter themes h5pb, twitter bootstrap
+wix
+grunt
+
+Books
+Classes
+Conferences

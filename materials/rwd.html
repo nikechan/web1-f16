@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Responsive Web Design</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+	<header>
+		<h1>Responsive Web Design</h1>
+
+		<nav>
+			<ul>
+				<li><a href="../index.html">Course Home</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section>
+		<h2>Tips</h2>
+
+		<div>
+			<h3>max-width: 100%;</h3>
+			<p>
+				Make sure to always have
+				<code>
+					<pre>
+img {
+  max-width: 100%; 
+}
+					</pre>
+				</code>
+				in your css file so that images won't escape out of their containers as you resize them.
+			</p>
+		</div>
+
+		<div>
+			<h3>target ÷ context = result</h3>
+			<p>Ethan's
+				<code>target ÷ context = result</code> was developed in a time when many web design teams had very separate roles for designers and front-end coders. Designers would often create mockups in Photoshop then hand them over to developers. Now (and especially
+				when working alone) it makes perfect sense to just work with %s directly in your css; forget trying to copy your PSD exactly.
+			</p>
+		</div>
+
+		<div>
+			<h3>scale &amp; device-width</h3>
+			<p>
+        Almost always you should have the following line in the <code>&lt;head&gt;</code> section of your website.
+				<code>
+					<pre>
+&lt;meta name="viewport" content="initial-scale=1.0, width=device-width" /&gt;
+					</pre>
+				</code>
+			</p>
+      <p>
+        You should pretty much never add <code>maximum-scale=1</code> to the above line because that will prevent users from using pinch-to-zoom which many, many, many, many people use (and need) to actually see your website.
+      </p>
+
+		</div>
+
+
+	</section>
+
+</body>
+
+</html>
