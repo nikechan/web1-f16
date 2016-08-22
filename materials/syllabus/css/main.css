@@ -229,6 +229,10 @@ h1 {
   color: #fefefe;
   padding: 1px 3px 1px 3px;
 }
+.halloween .work h3 {
+  background-color: #fe5b00;  
+  color: black;
+}
 .work ul {
   list-style: none;
   margin: 0 0 0.5em 0;
@@ -258,7 +262,7 @@ h1 {
   margin-left: 0.3em;
   font-size: 1em;
 }
-.css, .ftp, .html, .php, .rwd { border-radius: 4px; }
+.css, .git, .html, .php, .rwd { border-radius: 4px; }
 
 .css {
   color: black;
@@ -284,12 +288,12 @@ h1 {
 .html::after {
   content:'\003E';}
 
-.ftp {
+.git {
   color: #CEF470;
   background-color: #111;
   padding: 1px 3px 1px 3px;
 }
-.ftp::after {
+.git::after {
   content:' _';
 }
 
