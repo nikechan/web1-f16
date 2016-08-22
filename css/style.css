@@ -120,9 +120,12 @@ nav ul, nav li {
 /
 ////////////////////////////*/
 .software img {
-  max-width: 100px;
+  max-width: 75px;
   float: left;
   padding: 10px 1em 5px 0;
+}
+.software img.svg {
+  min-width: 75px;
 }
 .software {
   /* clearfix, http://learnlayout.com/clearfix.html */
