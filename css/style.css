@@ -182,7 +182,7 @@ table.schedule td:nth-child(1) {
 }
 table.schedule td:nth-child(2) {
   font-weight: bold;
-  min-width: 7em;
+  min-width: 9em;
 }
 table.schedule h3 {
   font-size: 1em;
