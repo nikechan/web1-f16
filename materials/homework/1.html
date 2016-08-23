@@ -11,8 +11,7 @@
 
 <body>
 	<header>
-		<h1>Homework #1</h1>
-
+		<h1>Homework #1 <span class="subtitle">—Student Page</span></h1>
 		<nav>
 			<ul>
 				<li><a href="../../index.html">Course Home</a></li>
@@ -20,55 +19,73 @@
 		</nav>
 	</header>
 
-	<section>
+	<p>Create a student page that will be used to display all of your coursework for the upcoming semester. Due by the start of <span class="highlight">next class</span>.</p>
+
+	<section>		
+		<h2>Goals</h2>
+		<ol>
+			<li>Introduction to HTML tags</li>
+			<li>Practice using GitHub Desktop</li>
+			<li>Practice editing code using the Sublime text editor</li>
+		</ol>
+		
 		<h2>Tasks</h2>
 		<ol>
-			<li>Buy book: <a href="http://www.amazon.com/HTML-CSS-Design-Build-Websites/dp/1118008189/">HTML and CSS by Jon Duckett</a>
+			<li>Buy book: <a href="http://www.amazon.com/HTML-CSS-Design-Build-Websites/dp/1118008189/">HTML and CSS by Jon Duckett</a>. Note that the more expensive hardcover is identical to this 2011 softcover.
 			</li>
 			<li>Create a free account with <a href="https://github.com">Github</a></li>
-			<li>Download and install Sublime &amp; Github Desktop, see <a href="../tools.html">tools page</a> for links, instructions and setup.
+			<li>Download and install Sublime &amp; Github Desktop, see <a href="../tools/tools.html">tools page</a> for links, instructions and setup.
 			</li>
-			<li>Create your student page at
-				<code>http://massart.andrewringler.com/web1-f15/students/<b>yourname</b>/index.html</code>
+		
+			<li>
+				Create your student page:
+				<ol>
+					<li>Fork <a href="https://github.com/andrewringler/web1-f16-student">https://github.com/andrewringler/web1-f16-student</a></li>
+					<li>Enable <i>Github Pages</i> in <br>Settings | GitHub Pages | Source | Master Branch | Save</li>
+					<li>After a few minutes your website should be live at <code>https://github.com/your-github-username/web1-f16-student</code> mine is live at <a href="https://andrewringler.github.io/web1-f16-student/">https://andrewringler.github.io/web1-f16-student/</a>
+						
+					</li>
+				</ol>							
 			</li>
-			<h3>Student page should contain:</h3>
-			<ol>
-				<li>Your Name
-					<code>&lt;h1&gt;</code>
-				</li>
-				<li>Your preferred email address as a link
-					<code>&lt;a&gt;</code>
-				</li>
-				<li>3 or more links to website designs that you like
-					<code>&lt;a&gt;</code>
-				</li>
-				<li>A paragraph describing why you are taking the class. 3 or more sentences please.
-					<code>&lt;p&gt;</code>
-				</li>
-			</ol>
+			
+			<li>
+				Customize your own student page to contain:
+				<ol>
+					<li>Your Name
+						<code>&lt;h1&gt;</code>, <code>&lt;title&gt;</code>
+					</li>
+					<li>Your email address as a link
+						<code>&lt;a&gt;</code> with <code>mailto:</code>, or a fictional one if you are worried about SPAM.
+					</li>
+					<li>A list of at least five links to website designs that you like
+						<code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code>, <code>&lt;a&gt;</code>, and a short description explaining why.
+					</li>
+					<li>A paragraph or two describing why you are taking the class, what you hope to achieve and technologies you are interested in.
+						<code>&lt;p&gt;</code>
+					</li>
+					<li>One or more screenshots of web pages or sections of web pages that you enjoy <code>&lt;img&gt;</code></li>
+					<li>Separate sections with <code>&lt;h2&gt;</code> or <code>&lt;h3&gt;</code> tags</li>
+				</ol>
+			</li>
+			<li>Validate your page using <a href="https://validator.w3.org/">https://validator.w3.org/</a> and fix any issues.</li>
+			<li>Sync your changes with GitHub. You may sync as often as you desire.</li>
 		</ol>
 	</section>
 
 	<section>
 		<h2>Reading</h2>
 		<ul>
+			<li><a href="https://ia.net/know-how/the-web-is-all-about-typography-period">Web Design is 95% Typography</a></li>
 			<li>HTML &amp; CSS &mdash;Introduction</li>
-			<li>HTML &amp; CSS &mdash;Chapter 1: Structure</li>
+			<li>HTML &amp; CSS &mdash;<a href="http://www.htmlandcssbook.com/sample-chapter/">Chapter 1: Structure</a></li>
 		</ul>
 	</section>
 
 	<section>
-		<h2>Tips</h2>
+		<h2>Notes on <code>index.html</code></h2>
 
-		<h3>Student Page</h3>
 		<p>
-			Remember default paths? You will be able to visit your page at
-			<code>http://massart.andrewringler.com/web1-f15/students/<b>yourname</b></code> because the web-browser automatically looks for index.html pages.
-		</p>
-		<p>
-			Take a look at the example student page <a href="../../students/veronica">Veronica</a> for example of what the page could look like. Your page can look any way you want though! Take a look at the source of Ceren's page if you need help remembering
-			what the code should look like, or download the
-			<code>ceren</code> folder using Cyberduck so you can look at the page in Atom on your computer locally.
+			Remember default paths? When you visit <a href="https://andrewringler.github.io/web1-f16-student/">https://andrewringler.github.io/web1-f16-student/</a> your web-browser automatically looks for index.html pages. So <a href="https://andrewringler.github.io/web1-f16-student/">https://andrewringler.github.io/web1-f16-student/</a> and <a href="https://andrewringler.github.io/web1-f16-student/index.html">https://andrewringler.github.io/web1-f16-student/index.html</a> are the same page, just with different looking URLs.
 		</p>
 	</section>
 </body>
