@@ -262,7 +262,7 @@ h1 {
   margin-left: 0.3em;
   font-size: 1em;
 }
-.css, .git, .html, .php, .rwd { border-radius: 4px; }
+.css, .git, .html, .php, .rwd, .js { border-radius: 4px; }
 
 .css {
   color: black;
@@ -302,6 +302,15 @@ h1 {
   background-color: #6E84B6;
   padding: 1px 3px 1px 3px;
   font-style: oblique;
+}
+.js {
+  color: black;
+  background-color: yellow;
+  padding: 1px 3px 1px 3px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.75em;
+  font-family: Helvetica, "Helvetica Neue", arial, sans-serif;
 }
 
 .rwd {
