@@ -44,11 +44,38 @@
 		<li>Dull fuchsia</li>
 	</ol>
 
-	<h2>Images</h2>
-	<img src="brooklynmuseum-o2791i000-31.194_cropped_SL1.jpg" alt="Chicago World's Fair Watercolor by Thomas Moran">
-	<!-- I am an html comment, for the web developers benefit, I won't show up on the page
-	https://archive.org/details/brooklynmuseum-o2791-chicago-worlds-fair -->
+  <h2>Tables</h2>
+  <table>
+    <tr> <!-- I am a row -->
+      <th>Color</th> <!-- th makes a cell bold -->
+      <th>Color Code</th>
+      <th>Related Fruits</th>
+    </tr>
+    <tr>
+      <td>Red</td> <!-- I am a cell within a row -->
+      <td>#FF0000</td>
+      <td>Apple, Beet</td>
+    </tr>
+    <tr>
+      <td>Blue</td>
+      <td>#0000FF</td>
+      <td>Blueberry, Blue Eggplant</td>
+    </tr>
+  </table>
 
+	<h2>Images</h2>
+  <!-- note that images have no closing tag, this image
+        has a relative URL, that is relative to the location of the HTML file that loaded it. An image should always
+      have an alt tag that is read by screen-readers and Google (search engines) -->
+	<img src="brooklynmuseum-o2791i000-31.194_cropped_SL1.jpg" alt="Chicago World's Fair Watercolor by Thomas Moran">
+	<!-- I am an html comment, for the web developers benefit, I won't show up on the page, this image from:
+	https://archive.org/details/brooklynmuseum-o2791-chicago-worlds-fair -->
+  
+  <!-- an image can also have an absolute URL, it contains the complete path to the file http:// ... -->
+  <p>
+    An image with an absolute URL: 
+    <img src="http://massart.andrewringler.com/web1-f16/materials/tools/images/mark-github.svg" alt="GitHub logo">
+  </p>
 
 </body>
 </html>

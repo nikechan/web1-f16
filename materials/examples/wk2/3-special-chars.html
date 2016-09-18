@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Special Characters</title>
+</head>
+
+<body>
+	<h1>Special Characters</h1>
+
+  <h2>UTF-8</h2>
+  The easiest way to make sure most characters will just work, is to add <code>&lt;meta charset="utf-8"&gt;</code> in the <code>&lt;head&gt;</code> section of our page. <a href="http://w3techs.com/technologies/overview/character_encoding/all">85% of all web pages do this</a>. This will allow us to use <a href="http://unicode-table.com/">UNICODE</a> characters in our page which is a set of over 100,000 characters from <a href="http://www.unicode.org/charts/">hundreds of languages</a> so one may type in any language they desire. Like հայերեն (Armenian) or 中国 (Chinese). As well this is even required to type special characters in english like an — (em dash) or ellipses … or even “proper double quotes.”
+
+  <h3>Typing special characters</h3>
+  On the Mac there are several ways to insert specials characters, the most common being
+  <ul>
+    <li>the `Character Viewer` available in the menu as `Edit - Special Chracters` for example I can type Nike®</li>
+    <li>Hold down the key you are typing for accents for example by holding down `e` I can type André</li>
+    <li>Using keyoard shortcuts like `option ;` for an ellipses … You can see a list of keyboard shortcuts <a href="http://support.apple.com/kb/PH11380">using the keyboard viewer</a>.</li>
+    <li>Copy and paste a special character from any web page into your text editor</li>
+  </ul>
+
+  <h2>HTML Entities With Special Meaning</h2>
+  <p>There are only 4 special characters that are used in HTML itself so if want to
+  display them on a page (for example when showing code samples) we need to use
+  <a href="http://www.w3.org/TR/html4/charset.html">a special form</a> to show them.</p>
+  <ul>
+    <li><code>&amp;lt;</code> represents the &lt; sign.</li>
+    <li><code>&amp;gt;</code> represents the &gt; sign.</li>
+    <li><code>&amp;amp;</code> represents the &amp; sign.</li>
+    <li><code>&amp;quot;</code> represents the " mark. Note that is the upright quote used for coding. It is not the double quotes we use when we are quoting someone. For that we don't need a special tag “no special tags for these quotes.”</li>
+  </ul>
+
+
+</body>
+</html>
