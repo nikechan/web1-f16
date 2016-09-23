@@ -35,7 +35,7 @@
     </ol>
 
     <h2>Deliverables</h2>
-    <p>A single-page event website synced to GitHub and linked to from your <i>Student Page</i>. Should contain any information visitors to the event would need to know structured in a usable fashion.</p>
+    <p>A single-page event website synced to GitHub and linked to from your <i>Student Page</i>. See <a href="https://andrewringler.github.io/web1-f16-student/">andrewringler.github.io/web1-f16-student/</a> (<a href="https://github.com/andrewringler/web1-f16-student">GitHub</a>) for an example of how to do this. Should contain any information visitors to the event would need to know structured in a usable fashion.</p>
     <p>Suggested content includes (you must include at least five of the following):</p>
     
     <ol class="sections">
@@ -51,6 +51,19 @@
     </ol>
     
     <p>Minimal CSS styling including font choice, type sizes, type weight and color.</p>
+    
+    <h3>Fonts</h3>
+    <p>A good list of fonts that are generally available on a wide range of computers are at <a href="http://www.cssfontstack.com/">CSS Font Stack</a>. If you click on a font, like <a href="http://www.cssfontstack.com/Optima">Optima</a>, it gives you a <code>font-family</code> line that you can cut-paste into your CSS. Their h1 examples looks like:
+    </p>
+    <code><pre>
+h1 {
+   font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+}
+    </pre>
+    </code>
+    <p>
+      This is specifying “fallbacks”, so first your browser will try to load the site with Optima, if not available, it will try Segoe, then Segoe UI, etc…. This is an opinated list of fonts that cssfontstack thoughts were similar-ish to Optima. Next week we will learn to use WebFonts, which will allow us to just provide the user with Optima if they don't have it.
+    </p>
     
   </section>
 
