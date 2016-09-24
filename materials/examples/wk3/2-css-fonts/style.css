@@ -4,18 +4,36 @@ body {
 }
 h1 {
 	font-size: 3em;
+	/* We are providing Ostrich Sans to users of our website via WebFonts
+	 * this is being included in our page via @font-face,
+	 * see webfonts/ostrich-sans.css */
 	font-family: 'Ostrich Sans';
 	font-weight: 900;
 }
 h2 {
+	/* We are providing Roboto to users of our website via WebFonts
+	 * it is being included in our page via @font-face,
+	 * Google.com/fonts is generating this CSS for us,
+	 * see see http://fonts.googleapis.com/css?family=Roboto:400 */
 	font-family: 'Roboto';
 	font-weight: 400;
 	letter-spacing: 0.4em;
 }
 p {
+	/* We are not providing any of the following fonts to our users
+	 * we are hoping that they are already installed on our user's
+	 * computers. We provide fallback fonts, so each font is tried
+	 * in order, from left-to-right, until one is found. "sans-serif"
+	 * is a required default. Usually Arial on Windows, Helvetica on Apple */
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	font-size: 0.8em;
 	line-height: 1.8em;
 	margin-bottom: 3em;
 	max-width: 40em;
+}
+
+
+code.block {
+	display: block;
+	margin: 1em 0;
 }

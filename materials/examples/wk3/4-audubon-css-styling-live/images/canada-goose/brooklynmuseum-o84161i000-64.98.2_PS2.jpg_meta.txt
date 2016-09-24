@@ -1,0 +1,14 @@
+ETag: "41eab2a7db8976218c1955b70a3d2a0f"
+accept: */*
+authorization: LOW dgagl9d0kyPycBCO:REDACTED_BY_IA_S3
+connection: close
+content-length: 89569
+content-type: application/x-www-form-urlencoded;charset=UTF-8
+host: s3.us.archive.org
+user-agent: curl/7.19.4 (i386-portbld-freebsd6.0) libcurl/7.19.4 OpenSSL/0.9.8j zlib/1.2.2
+x-archive-meta-adder: brooklynmuseum
+x-archive-meta-caption: John J. Audubon (American, 1785-1851). <em>Canada Goose</em>. Aquatint, Sheet: 35 3/4 x 24 3/4 in. (90.8 x 62.9 cm). Brooklyn Museum, Gift of the estate of Emily Winthrop Miles, 64.98.2 (Photo: Brooklyn Museum, 64.98.2_PS2.jpg)
+x-archive-meta-date: 2006
+x-archive-meta-mediatype: image
+x-archive-meta-uploader: brooklynmuseum
+x-upload-date: 2010-05-05T23:49:55.000Z
