@@ -7,11 +7,26 @@
 /
 /
 ////////////////////////////*/
+body {
+	margin: 1em 0.5em 1em 0.5em;
+	max-width: 33em;
+}
+img {
+	/* prevent images from escaping their parent
+	 * container, you almost always want this */
+	max-width: 100%;
+}
 h1 {
 	/* CHANGE ME! */
 	color: white;
 	background-color: purple;
 }
+
+
+
+
+
+
 
 
 

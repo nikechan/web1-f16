@@ -1,0 +1,67 @@
+body {
+	font-family: "Franklin Gothic";
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 40em;
+}
+nav ul {
+	list-style-type: none;	
+}
+nav ul li {
+	margin-bottom: 1em;	
+	margin-right: 2em;
+	display: inline;
+}
+
+
+h1 {
+	color: red;
+}
+h1 {
+	/* we make an obvious change making the color red
+	   just so that we know this stylesheet is working */
+	color: green;
+}
+/* this finds things like
+ *    <span id="brown-pelican"> ...
+ * and styles them */
+#brown-pelican {
+	color: white;
+	background-color: brown;
+}
+/* this finds things like
+ * <span class="bird-images"> ...
+ * and styles them */
+.bird-images {
+	/* brown pelican is still brown
+	 * because it is targeted with an ID
+	 * which is more specific than this */
+	background-color: pink;
+	margin-bottom: 4em;
+	border: solid 3px black;
+	padding: 1em;
+	max-width: 10em;
+}
+.bird-images img {
+	margin-bottom: 0.5em;
+}
+.bird-images figcaption {
+	font-weight: bold;
+	font-family: Arial;
+}
+
+/* applies to both a
+ * and a:visited */
+a, a:visited {
+	color: black;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: pink;
+}
+
+blockquote {
+	text-indent: 1em;
+}
+
+

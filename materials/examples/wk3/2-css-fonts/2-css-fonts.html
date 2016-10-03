@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Type Styles</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="webfonts/ostrich-sans.css">
+	<link href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<h1>Using Fonts on the Web</h1>
+
+	<h2>Fallback fonts</h2>
+	<p>
+		We should be seeing paragraphs (
+		<code>p</code>), like this one styled in
+		<em>Futura</em>. We use a CSS like like:
+		<code class="block">
+			font-family: Futura, &quot;Trebuchet MS&quot;, Arial, sans-serif;
+		</code>
+		this, to provide fallback fonts. Each font is tried in order, from left-to-right, until one is found. “sans-serif” is a required default, it is usually Arial on Windows and Helvetica on OS-X.
+	</p>
+	
+	<h2>WebFonts: Ostrich Sans (self-hosted)</h2>
+	<p>
+		WebFonts allow us greater control over which font is actually displayed for our user. If the user doesn't have the font installed, we provide it too them. There are two main ways of doing this. We'll call them <em>self-hosted</em> and <em>service-hosted</em>. Self-hosted just means that you need to upload all the font files to your own web server.
+	</p>
+	<p>
+		Ostrich Sans is provided freely by the <a href="https://www.theleagueofmoveabletype.com/">League of Moveable Type</a>. In order to use it we need to download it from their website at <a href="https://www.theleagueofmoveabletype.com/ostrich-sans">Ostrich Sans</a>. Unzip and copy to our web project. Then we need to include a link to their CSS file from our HTML file. Then we need to actually specify which elements should be styled using this font in our CSS. All our <code>h1</code> tags should be styled with Ostrich Sans. Like this one:<h1>I am in Ostrich Sans</h1>
+	</p>
+
+	<h2>WebFonts: Roboto (service-hosted)</h2>
+	<p>
+		If someone else hosts the font for us, then we can skip the step of downloading it. Services like <a href="https://www.fonts.com/">fonts.com</a>, <a href="https://typekit.com/">Typekit</a> and <a href="https://fonts.google.com/">Google Fonts</a> do just that. We'll use Google Fonts since it is free. Essentially you just need to pick a font, copy their code into your HTML file (to include the font), then use the font for an element in your CSS. All <code>h2</code> tags should be styled with the Google Font <em>Roboto</em>. Like this one: <h2>I am in Roboto</h2>
+	</p>
+
+
+</body>
+
+</html>

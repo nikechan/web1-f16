@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML Tags</title>
+  
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1>HTML Tags</h1>
+	<p>
+		Review of HTML tags from last week, and introduction of
+		lists and images.
+	</p>
+
+	<p>
+		There are 6 levels of headings in HTML h1 to h6. Usually we only have one h1 tag
+		on our page reserved for the page name.
+	</p>
+	<h2>2nd level heading</h2>
+	<h3>3rd level heading</h3>
+	<h4>4th level heading</h4>
+	<h5>5th level heading</h5>
+	<h6>6th level heading</h6>
+
+	<h2>Lists</h2>
+	<p>
+		We usually announce every major section of content with a h2 tag.
+	</p>
+	<h3>Unordered list ul</h3>
+	<ul>
+		<li>Item one</li>
+		<li>Item two</li>
+		<li>Item three. You can put anything inside a list element. Including links to <a href="http://google.com">google.com</a>, images, header tags.
+		</li>
+	</ul>
+
+	<h3>Ordered list ol</h3>
+	<h4>My Top 5 Favorite Colors (in order)</h4>
+	<ol>
+		<li>Green</li>
+		<li>Red</li>
+		<li>Hot Pink</li>
+		<li>Ultraviolet (entire spectrum)</li>
+		<li>Dull fuchsia</li>
+	</ol>
+
+  <h2>Tables</h2>
+  <table>
+    <tr> <!-- I am a row -->
+      <th>Color</th> <!-- th makes a cell bold -->
+      <th>Color Code</th>
+      <th>Related Fruits</th>
+    </tr>
+    <tr>
+      <td>Red</td> <!-- I am a cell within a row -->
+      <td>#FF0000</td>
+      <td>Apple, Beet</td>
+    </tr>
+    <tr>
+      <td>Blue</td>
+      <td>#0000FF</td>
+      <td>Blueberry, Blue Eggplant</td>
+    </tr>
+  </table>
+
+	<h2>Images</h2>
+  <!-- note that images have no closing tag, this image
+        has a relative URL, that is relative to the location of the HTML file that loaded it. An image should always
+      have an alt tag that is read by screen-readers and Google (search engines) -->
+  <p>
+    Shrink your browser window width-wise. Watch how this image will shrink to fill the browser window. This is because we have the max-width: 100% set for img in our CSS.
+  </p>
+	<img src="brooklynmuseum-o2791i000-31.194_cropped_SL1.jpg" alt="Chicago World's Fair Watercolor by Thomas Moran">
+	<!-- I am an html comment, for the web developers benefit, I won't show up on the page, this image from:
+	https://archive.org/details/brooklynmuseum-o2791-chicago-worlds-fair -->
+  
+  <!-- an image can also have an absolute URL, it contains the complete path to the file http:// ... -->
+  <p>
+    An image with an absolute URL: 
+    <img src="http://massart.andrewringler.com/web1-f16/materials/tools/images/mark-github.svg" alt="GitHub logo">
+  </p>
+
+</body>
+</html>
